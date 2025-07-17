@@ -79,8 +79,4 @@
 
 ---
 
-<p align="center">
-  <a href="https://github.com/Erika918">
-    <img src="https://img.shields.io/github/followers/Erika918?label=Follow&style=social" alt="GitHub Follow" />
-  </a>
-</p>
+
