@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f9d423, #ff4e50); /* fundo em gradiente */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  flex: 1 1 250px;
+  text-align: center;
+  animation: float 3s ease-in-out infinite;
+}
+
+.foto {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #4CAF50;
+  animation: pulse 2s infinite;
+}
+
+/* Animação de pulsação */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 15px rgba(76, 175, 80, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
+  }
+}
+
+.content {
+  flex: 2 1 500px;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.content h2 {
+  margin-top: 30px;
+}
+
+/* Redes sociais estilizadas */
+.socials a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Ícones com margem à esquerda */
+.socials a i {
+  margin-right: 8px;
+}
+
+/* Cores personalizadas */
+.linkedin {
+  color: #0077b5;
+}
+
+.curriculo {
+  color: #222;
+}
+
+.gmail {
+  color: #d44638;
+}
+
+.discord {
+  color: #7289da;
+}
+
+.whatsapp {
+  color: #25d366;
+}
+
+/* Hover */
+.socials a:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.project {
+  background: rgba(0,0,0,0.2);
+  padding: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.project small {
+  display: block;
+  font-weight: normal;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.project:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .profile img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .content h1 {
+    font-size: 2em;
+  }
+}
