@@ -157,3 +157,9 @@ body {
     font-size: 2em;
   }
 }
+.github-follow-container {
+  display: inline-block;
+  background-color: pink; /* cor de fundo */
+  padding: 8px;           /* espaço interno */
+  border-radius: 8px;     /* cantos arredondados */
+}
